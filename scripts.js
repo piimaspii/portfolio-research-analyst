@@ -112,6 +112,8 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Typed.js initialization
+    // Ganti bagian Typed lo jadi begini:
+setTimeout(() => {
     const typed = new Typed('.multiple-text', {
         strings: ['Geopolitical Risk Analyst', 'Macro-Economic Researcher', 'Investment Strategist', 'Data-Driven Tool Builder'],
         typeSpeed: 100,
@@ -119,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
         backDelay: 1000,
         loop: true
     });
-
+}, 500); // Nunggu 0.5 detik biar aman
     // Form submission
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
